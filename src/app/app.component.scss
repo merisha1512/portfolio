@@ -1,0 +1,14 @@
+/* Wrapper to take full screen height */
+.page-wrapper {
+    min-height: 100vh;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Dark mode */
+  body.dark-mode .page-wrapper {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
