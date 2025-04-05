@@ -1,1 +1,22 @@
-<p>contact works!</p>
+<div class="contact-container">
+    <h2>Contact Me</h2>
+    <form (submit)="onSubmit()" #contactForm="ngForm">
+      <label>
+        Name:
+        <input type="text" name="name" ngModel required />
+      </label>
+  
+      <label>
+        Email:
+        <input type="email" name="email" ngModel required />
+      </label>
+  
+      <label>
+        Message:
+        <textarea name="message" rows="5" ngModel required></textarea>
+      </label>
+  
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+  
